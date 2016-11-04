@@ -1,0 +1,23 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package be.vdab.util.mens;
+
+/**
+ *
+ * @author kjell.leenknegt
+ */
+public class MensException extends RuntimeException {
+    public MensException() {}
+    public MensException(String omschrijving){
+        super(omschrijving);
+    }
+    public MensException(String omschrijving, Throwable oorzaak){
+        super(omschrijving,oorzaak);
+    }
+    public MensException(Throwable oorzaak){
+        super(oorzaak);
+    }
+}
